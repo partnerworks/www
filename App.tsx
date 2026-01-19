@@ -1,13 +1,13 @@
+
 import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import AudienceSection from './components/AudienceSection';
-import WhyMatters from './components/WhyMatters';
-import ProcessTimeline from './components/ProcessTimeline';
-import ServicesDetail from './components/ServicesDetail';
+import WhatWeDo from './components/WhatWeDo';
+import OurApproach from './components/OurApproach';
+import WhoWeWorkWith from './components/WhoWeWorkWith';
+import WhyPartnerworks from './components/WhyPartnerworks';
+import Sectors from './components/Sectors';
 import ContactFooter from './components/ContactFooter';
-import PortfolioGovernance from './components/PortfolioGovernance';
-import NEDSection from './components/NEDSection';
 
 const App: React.FC = () => {
   const openCalendly = () => {
@@ -16,20 +16,15 @@ const App: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-white text-brand-black font-sans selection:bg-brand-blue selection:text-brand-black">
-      <Navbar 
-        onContactClick={openCalendly} 
-      />
+      <Navbar onContactClick={openCalendly} />
       
       <main>
         <Hero onCtaClick={openCalendly} />
-        <AudienceSection />
-        <WhyMatters />
-        <ServicesDetail 
-            onCtaClick={openCalendly} 
-        />
-        <NEDSection />
-        <PortfolioGovernance />
-        <ProcessTimeline />
+        <WhatWeDo />
+        <WhoWeWorkWith />
+        <OurApproach />
+        <WhyPartnerworks />
+        <Sectors />
       </main>
 
       <ContactFooter onContactClick={openCalendly} />
