@@ -13,9 +13,9 @@ const ContactFooter: React.FC<ContactFooterProps> = ({ onContactClick }) => {
       <div className="bg-brand-blue py-24 px-4 text-brand-black">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">Let's Discuss the Next Opportunity</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">Let's Discuss Your Strategic Objectives</h2>
             <p className="text-xl text-gray-800 max-w-2xl mx-auto">
-              Whether you are an investor seeking quality deal flow or a business ready to scale, let's explore how we can facilitate your growth.
+              Whether you are an investor seeking quality deal flow or a business owner ready to scale or transition, let's explore how we can facilitate your growth.
             </p>
           </div>
 
@@ -23,7 +23,7 @@ const ContactFooter: React.FC<ContactFooterProps> = ({ onContactClick }) => {
             <div className="bg-white p-10 rounded-3xl shadow-sm hover:shadow-xl transition-shadow">
               <h3 className="text-2xl font-bold mb-4">For Investors</h3>
               <p className="text-gray-600 mb-8 leading-relaxed">
-                Looking for high-quality technology investment opportunities with strong value creation potential? Let's discuss how we can support your dealflow and drive returns.
+                Seeking high-quality SME investment opportunities with strong value creation potential? Let's discuss how we can support your deal flow and drive returns.
               </p>
               <button onClick={onContactClick} className="flex items-center font-bold hover:text-brand-orange transition-colors">
                 Schedule a Dealflow Call <ArrowRight className="w-4 h-4 ml-2" />
@@ -31,12 +31,12 @@ const ContactFooter: React.FC<ContactFooterProps> = ({ onContactClick }) => {
             </div>
 
             <div className="bg-white p-10 rounded-3xl shadow-sm hover:shadow-xl transition-shadow">
-              <h3 className="text-2xl font-bold mb-4">For Businesses</h3>
+              <h3 className="text-2xl font-bold mb-4">For SME Owners</h3>
               <p className="text-gray-600 mb-8 leading-relaxed">
-                Ready to scale, expand internationally, or find the right growth capital partner to unlock value? Let's explore how we can help your management team.
+                Ready to scale, transition management, or find the right growth capital partner to unlock value? Let's explore how we can support your journey.
               </p>
               <button onClick={onContactClick} className="flex items-center font-bold hover:text-brand-orange transition-colors">
-                Explore Growth Capital <ArrowRight className="w-4 h-4 ml-2" />
+                Explore Value Creation <ArrowRight className="w-4 h-4 ml-2" />
               </button>
             </div>
           </div>
@@ -54,7 +54,7 @@ const ContactFooter: React.FC<ContactFooterProps> = ({ onContactClick }) => {
               Partnerworks<span className="text-brand-pink">.</span>
             </span>
             <p className="text-gray-400 text-sm max-w-xs leading-relaxed">
-              Connecting capital with opportunity through strategic dealmaking, effective partnerships, and sustainable value creation.
+              Converting operational success into enterprise value through strategic advisory, effective partnerships, and sustainable growth.
             </p>
           </div>
           <div>
@@ -83,9 +83,9 @@ const ContactFooter: React.FC<ContactFooterProps> = ({ onContactClick }) => {
         <div className="pt-8 flex flex-col md:flex-row justify-between items-center text-gray-500 text-xs">
           <p>&copy; 2026 Partnerworks Ltd. All rights reserved.</p>
           <div className="flex gap-6 mt-4 md:mt-0">
-            <span>Dealmaking</span>
             <span>Value Creation</span>
-            <span>Partnerships</span>
+            <span>Exit Readiness</span>
+            <span>Strategic Advisory</span>
           </div>
         </div>
       </div>

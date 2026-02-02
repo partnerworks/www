@@ -3,6 +3,7 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import WhatWeDo from './components/WhatWeDo';
+import ServicesDetail from './components/ServicesDetail';
 import OurApproach from './components/OurApproach';
 import WhoWeWorkWith from './components/WhoWeWorkWith';
 import WhyPartnerworks from './components/WhyPartnerworks';
@@ -21,6 +22,7 @@ const App: React.FC = () => {
       <main>
         <Hero onCtaClick={openCalendly} />
         <WhatWeDo />
+        <ServicesDetail onCtaClick={openCalendly} />
         <WhoWeWorkWith />
         <OurApproach />
         <WhyPartnerworks />

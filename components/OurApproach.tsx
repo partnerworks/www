@@ -1,44 +1,62 @@
 
 import React from 'react';
-import { Target, Link2, TrendingUp, ShieldCheck, Search, Globe } from 'lucide-react';
+import { Search, TrendingUp, ShieldCheck, Target, Compass, Zap, CheckCircle2 } from 'lucide-react';
 
 const OurApproach: React.FC = () => {
-  const approaches = [
+  const frameworkStages = [
     {
       icon: <Search className="w-8 h-8 text-brand-blue" />,
-      title: "Understanding Requirements",
-      desc: "We look beyond the balance sheet to understand investor mandates and business ambitions deeply.",
-      value: "Ensures initial alignment and reduces friction during the deal lifecycle."
+      title: "1. Context and Reality Check",
+      points: [
+        "Separate signal from operational noise",
+        "Identify constraints, assumptions and hidden risks",
+        "Understand how the business truly operates today"
+      ]
     },
     {
-      icon: <Target className="w-8 h-8 text-brand-orange" />,
-      title: "Strategic Matching",
-      desc: "Connecting capital with organisations whose culture and growth plans align with the investor's capability.",
-      value: "Leads to higher-quality deal flow and more successful long-term outcomes."
+      icon: <TrendingUp className="w-8 h-8 text-brand-orange" />,
+      title: "2. Value Driver Identification",
+      points: [
+        "Identify where value is created across revenue, margin, IP, contracts and people",
+        "Assess durability, defensibility and transferability",
+        "Highlight value leakage and concentration risk"
+      ]
     },
     {
-      icon: <TrendingUp className="w-8 h-8 text-brand-pink" />,
-      title: "Value Creation Focus",
-      desc: "Identifying specific opportunities to scale, improve operations, and drive market leadership post-investment.",
-      value: "Drives returns for investors and sustainable growth for the business."
+      icon: <ShieldCheck className="w-8 h-8 text-brand-pink" />,
+      title: "3. Dependency and Risk Reduction",
+      points: [
+        "Address founder, customer and supplier dependency",
+        "Reduce key-person and decision-making risk",
+        "Improve resilience without bureaucracy"
+      ]
     },
     {
-      icon: <Link2 className="w-8 h-8 text-green-600" />,
-      title: "Building Trust",
-      desc: "Facilitating genuine partnerships where both sides have clear expectations and shared goals.",
-      value: "Reduces execution risk and fosters collaborative management environments."
+      icon: <Target className="w-8 h-8 text-green-600" />,
+      title: "4. Strategic Narrative and Direction",
+      points: [
+        "Clarify strategic intent and ambition",
+        "Align growth priorities with value creation",
+        "Create a narrative that stands up to scrutiny"
+      ]
     },
     {
-      icon: <ShieldCheck className="w-8 h-8 text-purple-600" />,
-      title: "Technical Insight",
-      desc: "Providing credible, senior-level assessment of technology, security posture, and technical roadmap potential.",
-      value: "Provides investors with deeper technical due diligence and a true view of tech risk."
+      icon: <Compass className="w-8 h-8 text-purple-600" />,
+      title: "5. Optionality Planning",
+      points: [
+        "Assess readiness for growth, acquisition, funding or exit",
+        "Identify no-regret actions that improve all outcomes",
+        "Build leverage and choice over timing"
+      ]
     },
     {
-      icon: <Globe className="w-8 h-8 text-brand-black" />,
-      title: "Global Perspective",
-      desc: "Leveraging international experience to support cross-border expansion and globalisation strategies.",
-      value: "Unlocks new markets and increases the terminal value of the organisation."
+      icon: <Zap className="w-8 h-8 text-brand-black" />,
+      title: "6. Execution Focus and Momentum",
+      points: [
+        "Prioritise actions that move value in the next 90 days",
+        "Maintain momentum through focused working sessions",
+        "Avoid unnecessary complexity or distraction"
+      ]
     }
   ];
 
@@ -46,22 +64,26 @@ const OurApproach: React.FC = () => {
     <section id="approach" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-20">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6">Our Methodology</h2>
-          <p className="text-xl text-gray-600">
-            We've built and grown businesses ourselves. We understand what drives value and how to create partnerships where both sides win.
+          <span className="text-brand-orange font-bold uppercase tracking-widest text-sm mb-4 block">Our Methodology</span>
+          <h2 className="text-3xl md:text-5xl font-bold mb-6 italic">Our proprietary framework</h2>
+          <p className="text-xl text-gray-600 leading-relaxed">
+            A structured, board-level approach to identifying and unlocking latent enterprise value in owner-led businesses.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {approaches.map((item, idx) => (
-            <div key={idx} className="p-8 rounded-2xl bg-gray-50 border border-gray-100 hover:border-brand-blue transition-all group">
-              <div className="mb-6">{item.icon}</div>
-              <h3 className="text-xl font-bold mb-4">{item.title}</h3>
-              <p className="text-gray-600 text-sm leading-relaxed mb-6">{item.desc}</p>
-              <div className="pt-6 border-t border-gray-200">
-                <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">The Value Created</p>
-                <p className="text-sm font-medium text-brand-black">{item.value}</p>
-              </div>
+          {frameworkStages.map((stage, idx) => (
+            <div key={idx} className="p-8 rounded-2xl bg-gray-50 border border-gray-100 hover:border-brand-blue/30 transition-all group flex flex-col">
+              <div className="mb-6 group-hover:scale-110 transition-transform duration-300">{stage.icon}</div>
+              <h3 className="text-xl font-bold mb-6 text-brand-black">{stage.title}</h3>
+              <ul className="space-y-4 pt-6 border-t border-gray-200">
+                {stage.points.map((point, pIdx) => (
+                  <li key={pIdx} className="flex items-start gap-3">
+                    <CheckCircle2 className="w-4 h-4 text-gray-400 mt-1 shrink-0" />
+                    <span className="text-gray-600 text-sm leading-relaxed">{point}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>

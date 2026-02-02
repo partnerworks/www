@@ -1,28 +1,28 @@
 
 import React from 'react';
-import { Award, Zap, Globe, Users, ShieldCheck } from 'lucide-react';
+import { Award, Zap, Globe, ShieldCheck } from 'lucide-react';
 
 const WhyPartnerworks: React.FC = () => {
   const differentiators = [
     {
-      title: "Founder Experience",
+      title: "CEO & Exit Experience",
       icon: <Zap className="w-6 h-6 text-brand-orange" />,
-      desc: "We've built and exited a technology business. We understand the challenges of scaling, the pressures of growth, and what creates lasting value. We know where value lies because we've been in the founder's seat."
+      desc: "Our advice is grounded in real-world leadership. Our founder successfully exited a high-growth business in 2023, providing firsthand understanding of the scaling and exit process."
     },
     {
-      title: "Technical Expertise",
+      title: "Independent & Outcome-Driven",
       icon: <ShieldCheck className="w-6 h-6 text-brand-blue" />,
-      desc: "With deep expertise in technology and security, we assess technical risk and capability with authority. We identify value-creation opportunities that others often miss, providing investors with unique confidence in high-tech assets."
+      desc: "As an independent consultancy, we are focused solely on your commercial outcomes. We provide objective challenge and strategic clarity required at the board level."
     },
     {
-      title: "Global Reach",
+      title: "UK & UAE Market Exposure",
       icon: <Globe className="w-6 h-6 text-brand-pink" />,
-      desc: "International experience across UK, Europe, and Asia. We understand different markets, cultures, and what it takes to expand globally and unlock borderless terminal value."
+      desc: "Extensive experience navigating the commercial landscapes of both the UK and UAE, supporting cross-border expansion and global value creation."
     },
     {
-      title: "Partnership Focus",
-      icon: <Users className="w-6 h-6 text-green-600" />,
-      desc: "We prioritise effective, lasting partnerships over quick transactions. We focus on alignment, trust, and sustainable growth to ensure management and investors are perfectly aligned post-deal."
+      title: "Board-Level Governance",
+      icon: <Award className="w-6 h-6 text-green-600" />,
+      desc: "Extensive experience in managing complex P&L structures and making high-stakes capital allocation decisions that define the terminal value of a business."
     }
   ];
 
@@ -32,7 +32,7 @@ const WhyPartnerworks: React.FC = () => {
         <div className="max-w-3xl mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-brand-black mb-6">Why Partnerworks?</h2>
           <p className="text-xl text-gray-600">
-            What makes us effective dealmakers and value creation specialists is the combination of operational experience and technical authority.
+            Independent, owner-led advice grounded in real operating and exit experience. We are value creation specialists for the SME sector.
           </p>
         </div>
 

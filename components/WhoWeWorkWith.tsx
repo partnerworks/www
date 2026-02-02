@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Briefcase, Rocket, CheckCircle2 } from 'lucide-react';
+import { Briefcase, Building2, CheckCircle2 } from 'lucide-react';
 
 const WhoWeWorkWith: React.FC = () => {
   return (
@@ -9,63 +9,63 @@ const WhoWeWorkWith: React.FC = () => {
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">Who We Work With</h2>
+          <h2 className="text-4xl font-bold mb-4">Strategic Partnerships</h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            Facilitating effective partnerships between providers of capital and builders of technology.
+            Connecting capital with quality SME opportunities and supporting management teams through transition.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12">
-          {/* Private Equity Column */}
+          {/* Column 1 */}
           <div className="bg-white/5 border border-white/10 p-10 rounded-3xl">
             <div className="flex items-center gap-4 mb-8">
               <div className="p-4 bg-brand-orange/20 rounded-2xl">
                 <Briefcase className="w-8 h-8 text-brand-orange" />
               </div>
-              <h3 className="text-2xl font-bold">Private Equity & Growth Capital</h3>
+              <h3 className="text-2xl font-bold">Investors & PE Firms</h3>
             </div>
             <p className="text-gray-300 mb-8 leading-relaxed">
-              We support firms seeking high-quality technology investment opportunities with strong value creation potential. We help identify off-market gems and provide technical insight that standard DD might miss.
+              We support investors seeking quality deal flow and portfolio value creation. We provide independent assessment of management teams and operational scalability that standard due diligence often overlooks.
             </p>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <CheckCircle2 className="w-5 h-5 text-brand-orange shrink-0 mt-1" />
-                <span>Specialised focus on Cybersecurity, AI, and tech-enabled businesses.</span>
+                <span>Improving deal quality and exit outcomes through preparation.</span>
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle2 className="w-5 h-5 text-brand-orange shrink-0 mt-1" />
-                <span>Operational value creation partners who understand scaling.</span>
+                <span>Expert operational insight for UK and UAE market entries.</span>
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle2 className="w-5 h-5 text-brand-orange shrink-0 mt-1" />
-                <span>Assistance in driving growth and improving fund returns.</span>
+                <span>Strategic alignment between fund mandates and business reality.</span>
               </li>
             </ul>
           </div>
 
-          {/* Tech Businesses Column */}
+          {/* Column 2 */}
           <div className="bg-white/5 border border-white/10 p-10 rounded-3xl">
             <div className="flex items-center gap-4 mb-8">
               <div className="p-4 bg-brand-blue/20 rounded-2xl">
-                <Rocket className="w-8 h-8 text-brand-blue" />
+                <Building2 className="w-8 h-8 text-brand-blue" />
               </div>
-              <h3 className="text-2xl font-bold">Technology Businesses</h3>
+              <h3 className="text-2xl font-bold">Founder-Led SMEs</h3>
             </div>
             <p className="text-gray-300 mb-8 leading-relaxed">
-              We partner with management teams ready to scale and unlock value. We help you find the right investor who understands your sector and can provide the strategic leverage needed to globalise.
+              We partner with owner-operators ready to scale, transition, or exit. We provide the blueprint for professionalising governance and refining the commercial focus required to attract premium valuations.
             </p>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <CheckCircle2 className="w-5 h-5 text-brand-blue shrink-0 mt-1" />
-                <span>Connection to growth capital partners who align with your vision.</span>
+                <span>Strategic clarity for owners considering succession or exit.</span>
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle2 className="w-5 h-5 text-brand-blue shrink-0 mt-1" />
-                <span>Support in navigating scaling challenges and market expansion.</span>
+                <span>Navigating the shift from operator to board-level leadership.</span>
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle2 className="w-5 h-5 text-brand-blue shrink-0 mt-1" />
-                <span>Strategic advice from people who have built and exited tech firms.</span>
+                <span>Investor readiness and strategic funding positioning.</span>
               </li>
             </ul>
           </div>
