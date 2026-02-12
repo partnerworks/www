@@ -5,30 +5,36 @@ import Hero from './components/Hero';
 import WhatWeDo from './components/WhatWeDo';
 import ServicesDetail from './components/ServicesDetail';
 import OurApproach from './components/OurApproach';
-import WhoWeWorkWith from './components/WhoWeWorkWith';
 import WhyPartnerworks from './components/WhyPartnerworks';
-import Sectors from './components/Sectors';
 import ContactFooter from './components/ContactFooter';
 
 const App: React.FC = () => {
   const openCalendly = () => {
-    window.open('https://calendly.com/chrishyatt/30min?month=2025-11', '_blank');
+    window.open('https://calendly.com/chrishyatt/30min', '_blank');
   };
 
   return (
-    <div className="min-h-screen bg-white text-brand-black font-sans selection:bg-brand-blue selection:text-brand-black">
+    <div className="min-h-screen bg-brand-bgBlue text-brand-textPara font-sans selection:bg-brand-blue selection:text-black">
       <Navbar onContactClick={openCalendly} />
       
       <main>
+        {/* 1. Hero: PE Positioning */}
         <Hero onCtaClick={openCalendly} />
+        
+        {/* 2. Problem & What We Do Not Do */}
         <WhatWeDo />
+        
+        {/* 3. Services, AI & Commercial Model */}
         <ServicesDetail onCtaClick={openCalendly} />
-        <WhoWeWorkWith />
+        
+        {/* 4. The Origination Process */}
         <OurApproach />
+        
+        {/* 5. About & For Founders */}
         <WhyPartnerworks />
-        <Sectors />
       </main>
 
+      {/* 6. Contact: Mandate Enquiry */}
       <ContactFooter onContactClick={openCalendly} />
     </div>
   );
