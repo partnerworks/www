@@ -52,7 +52,7 @@ const Navbar: React.FC<NavbarProps> = ({ onContactClick }) => {
 
         <div className="hidden md:flex items-center space-x-10">
           <button onClick={() => scrollToSection('what-we-do')} className="text-brand-textPara hover:text-brand-textWhite transition-colors font-medium text-sm">Problem</button>
-          <button onClick={() => scrollToSection('services')} className="text-brand-textPara hover:text-brand-textWhite transition-colors font-medium text-sm">Capabilities</button>
+          <button onClick={() => scrollToSection('services')} className="text-brand-textPara hover:text-brand-textWhite transition-colors font-medium text-sm">How we work</button>
           <button onClick={() => scrollToSection('approach')} className="text-brand-textPara hover:text-brand-textWhite transition-colors font-medium text-sm">Framework</button>
           <button 
             onClick={onContactClick}
@@ -72,7 +72,7 @@ const Navbar: React.FC<NavbarProps> = ({ onContactClick }) => {
       {isMobileMenuOpen && (
         <div className="md:hidden bg-[#2D3748] border-b border-white/10 py-8 flex flex-col items-center space-y-6 shadow-2xl">
           <button onClick={() => scrollToSection('what-we-do')} className="text-brand-textWhite font-medium text-lg">Problem</button>
-          <button onClick={() => scrollToSection('services')} className="text-brand-textWhite font-medium text-lg">Capabilities</button>
+          <button onClick={() => scrollToSection('services')} className="text-brand-textWhite font-medium text-lg">How we work</button>
           <button onClick={() => scrollToSection('approach')} className="text-brand-textWhite font-medium text-lg">Framework</button>
           <button 
             onClick={onContactClick}

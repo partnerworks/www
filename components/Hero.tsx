@@ -8,7 +8,7 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
   return (
-    <section className="relative pt-32 pb-24 lg:pt-56 lg:pb-48 overflow-hidden bg-brand-bgBlue">
+    <section className="relative pt-24 pb-24 lg:pt-40 lg:pb-48 overflow-hidden bg-brand-bgBlue">
       {/* Decorative gradient */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-gradient-to-b from-black/20 to-transparent pointer-events-none"></div>
       
@@ -19,7 +19,7 @@ const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
           </span>
 
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-brand-textWhite leading-[1.1] mb-10 tracking-tight">
-            Reserved origination capacity for <span className="text-brand-blue">Private Equity</span>
+            Proprietary deal origination for <span className="text-brand-blue">private equity</span>
           </h1>
 
           <p className="text-xl md:text-2xl text-brand-textPara mb-14 leading-relaxed max-w-3xl mx-auto font-medium">
