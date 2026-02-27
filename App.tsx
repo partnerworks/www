@@ -2,10 +2,16 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import WhatWeDo from './components/WhatWeDo';
-import ServicesDetail from './components/ServicesDetail';
+import WhoWeHelp from './components/WhoWeHelp';
+import TheProblem from './components/TheProblem';
 import OurApproach from './components/OurApproach';
+import HowWeWork from './components/HowWeWork';
+import WhatWeDo from './components/WhatWeDo';
+import WhatWeDontDo from './components/WhatWeDontDo';
+import CapitalNetwork from './components/CapitalNetwork';
+import TypicalOutcomes from './components/TypicalOutcomes';
 import WhyPartnerworks from './components/WhyPartnerworks';
+import FAQ from './components/FAQ';
 import ContactFooter from './components/ContactFooter';
 
 const App: React.FC = () => {
@@ -18,23 +24,19 @@ const App: React.FC = () => {
       <Navbar onContactClick={openCalendly} />
       
       <main>
-        {/* 1. Hero: PE Positioning */}
         <Hero onCtaClick={openCalendly} />
-        
-        {/* 2. Problem & What We Do Not Do */}
-        <WhatWeDo />
-        
-        {/* 3. Services, AI & Commercial Model */}
-        <ServicesDetail onCtaClick={openCalendly} />
-        
-        {/* 4. The Origination Process */}
+        <WhoWeHelp />
+        <TheProblem />
         <OurApproach />
-        
-        {/* 5. About & For Founders */}
+        <HowWeWork />
+        <WhatWeDo />
+        <WhatWeDontDo />
+        <CapitalNetwork />
+        <TypicalOutcomes />
         <WhyPartnerworks />
+        <FAQ />
       </main>
 
-      {/* 6. Contact: Mandate Enquiry */}
       <ContactFooter onContactClick={openCalendly} />
     </div>
   );

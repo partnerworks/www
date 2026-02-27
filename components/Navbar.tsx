@@ -51,9 +51,9 @@ const Navbar: React.FC<NavbarProps> = ({ onContactClick }) => {
         </div>
 
         <div className="hidden md:flex items-center space-x-10">
-          <button onClick={() => scrollToSection('what-we-do')} className="text-brand-textPara hover:text-brand-textWhite transition-colors font-medium text-sm">Problem</button>
-          <button onClick={() => scrollToSection('services')} className="text-brand-textPara hover:text-brand-textWhite transition-colors font-medium text-sm">How We Work</button>
-          <button onClick={() => scrollToSection('approach')} className="text-brand-textPara hover:text-brand-textWhite transition-colors font-medium text-sm">Framework</button>
+          <button onClick={() => scrollToSection('who-we-help')} className="text-brand-textPara hover:text-brand-textWhite transition-colors font-medium text-sm">Who We Help</button>
+          <button onClick={() => scrollToSection('approach')} className="text-brand-textPara hover:text-brand-textWhite transition-colors font-medium text-sm">Approach</button>
+          <button onClick={() => scrollToSection('about')} className="text-brand-textPara hover:text-brand-textWhite transition-colors font-medium text-sm">About</button>
           <button 
             onClick={onContactClick}
             className="bg-brand-orange text-white px-6 py-2.5 rounded-lg hover:bg-orange-600 transition-colors font-bold text-sm shadow-lg"
@@ -71,9 +71,9 @@ const Navbar: React.FC<NavbarProps> = ({ onContactClick }) => {
 
       {isMobileMenuOpen && (
         <div className="md:hidden bg-[#2D3748] border-b border-white/10 py-8 flex flex-col items-center space-y-6 shadow-2xl">
-          <button onClick={() => scrollToSection('what-we-do')} className="text-brand-textWhite font-medium text-lg">Problem</button>
-          <button onClick={() => scrollToSection('services')} className="text-brand-textWhite font-medium text-lg">How We Work</button>
-          <button onClick={() => scrollToSection('approach')} className="text-brand-textWhite font-medium text-lg">Framework</button>
+          <button onClick={() => scrollToSection('who-we-help')} className="text-brand-textWhite font-medium text-lg">Who We Help</button>
+          <button onClick={() => scrollToSection('approach')} className="text-brand-textWhite font-medium text-lg">Approach</button>
+          <button onClick={() => scrollToSection('about')} className="text-brand-textWhite font-medium text-lg">About</button>
           <button 
             onClick={onContactClick}
             className="bg-brand-orange text-white px-10 py-4 rounded-lg font-bold w-3/4 shadow-xl"
